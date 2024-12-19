@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body , html {
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #555;
+    transition: 0.5s ease;
+}
+
+
+/*****************************************  HEADER  ******************************************/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.container{
+    max-width: 100%;    
+    margin: auto;
+    padding-left: 10vmin;
+    padding-right: 10vmin;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 60px 0;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+
+/************************************************ MESSAGE BOX ****************************************************/
+
+
+
+.msgbox{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form{
+    height: 400px;
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 40px;
+}
+
+.form h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 35px auto;
+}
+form label{
+    margin: 25px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;    
+}
+form input{
+    width: 70%;
+    height: 20px;
+    cursor: pointer;
+}
+form #sendmsg{
+    margin: 8px 25px;
+    height: 80px;
+    width: 86%;
+}
+
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form #submitmsg{
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 1.5px 1.5px #8a8a8a;  
+    border: none;
+    color: #fff;
+    background: linear-gradient(to right,#fc036b,#464545);
+        
+}
+
+
+/************************************************ FOOTER ************************************************/
+
+
+.footer .container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1.5px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+
+
+
+/****************************************** Animation *************************************/
+
+
+#submitmsg:hover{
+    display: block;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+
+/****************************************** MEDIA - QUIRY *************************************/
+
+
+@media only screen and (max-width:850px)
+{
+    .account-2{
+        margin: auto 110px 80px 110px;
+    }
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 75%;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        width: auto;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        border-bottom-right-radius: 25%;
+        border-top-left-radius: 20%;
+    }
+    nav ul li{
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+    
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }   
+    
+    .row{
+        text-align: center;
+    }
+    .col-2{
+        flex-basis: 100%;
+    }
+    
+    .form{
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width:850px) and (max-width:990px){
+
+    .form input{
+        width: 66%;
+        margin-right: 10px;
+    }
+}
+
+
+
